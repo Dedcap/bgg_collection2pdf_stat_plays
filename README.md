@@ -36,21 +36,28 @@ Print with no margins on US Letter paper. Make sure you enable "Print Background
                         User to pull BGG collection data from. (Required)
   -c, --cardmode        Create cards instead of a catalog. (default=Off)
   -i, --index           Enables creating an index. (default=Off)
+  -pl, --plays          Defining if the plays stored in BBG will be retrieved and proceed. (default=Off)
   --clean_all           Clear out Images, XML, and all other generated files. (default=Off)
   --clean_images        Clear out local images cache. (default=Off)
   --clean_xml           Clear out local xml cache. (default=Off)
+  --clean_plays         Clear out Excel file storing the plays data. (default=Off)
   -o, --own             Enables pulling only games set to own on BGG. (default=Off)
+  -wtp, --want_to_play  Enables pulling only games set to Want to play on BGG. (default=Off)
   --minsleep MINSLEEP   Minimum sleep duration on XML error. (Default=10)
   --maxsleep MAXSLEEP   Maximum sleep duration on XML error. (Default=120)
-  --no_cache            Turn off all caching (default=Off)
+  --no_cache            Turn off all caching (except plays data manage with the below parameter) (default=Off)
+  --no_cache_plays            Turn off Plays caching (default=Off)
   --output OUTPUT       Output html file. (Default="./output.html")
+  --output_plays OUTPUT       Output html file for plays. (Default="./output_plays.html")
+  --output_not_play OUTPUT       Output html file for game not plays this year. (Default="./output_not_play.html")
+  --output_xlsx OUTPUT       Output Excel file for plays data. (Default="./Plays.xlsx")
   --images_path IMAGES_PATH
                         Images path. (Default="./Images")
   --xml_path XML_PATH   Game XML Path. (Default="./game_xml")
   --collection_xml COLLECTION_XML
                         Output collection XML file.(Default="./collection.xml")
 
-```
+```   
 
 ## Authors
 
